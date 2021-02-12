@@ -1,0 +1,67 @@
+//html, body {
+//    height: 100%;
+//}
+
+body {
+    background:
+        url('../../public/images/background/book_3.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+    //background:
+    //    url('../images/textures/noise-header.png'),
+    //    linear-gradient(
+    //            to bottom,
+    //            $color-background-red,
+    //            #d61c23),
+    //    radial-gradient(
+    //            circle at 50% 0%,
+    //            rgba(255, 255, 255, 0.5) 0%,
+    //            rgba(0, 0, 0, 0.5) 75%),
+    //    url($img);
+}
+
+.wrapper-global {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+.wrapper-content {
+    height: calc(100% - 200px);
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+
+    &__content {
+        text-align: center;
+    }
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 3em;
+    padding-top: 20px;
+
+    &__item {
+        list-style: none;
+
+        //&:not(:first-child) {
+        //    padding-left: 30px;
+        //}
+    }
+
+    &__admin {
+        position: absolute;
+        top: 10px;
+        right: 0;
+        padding-top: 20px;
+    }
+}
